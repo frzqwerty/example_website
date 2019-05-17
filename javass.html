@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <javascript>
+      var columns = ["Date", "Number", "Size", "Location", "Age"];
+var rows = ["2001", "5", "Big", "Sydney", "25"];
+var result = rows.reduce(function(result, field, index) {
+result[columns[index]] = field;
+return result;
+}, {})
+console.log(result);
+Output:
+{
+Date: "2001",
+      </javascript>
+
+  </body>
+</html>
